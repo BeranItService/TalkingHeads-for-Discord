@@ -12,6 +12,8 @@ Something you can use in your streams to allow the audience see who's talking on
 
 * To invite your new bot to your server, get your bot's CLIENT ID from the bot's discord page ([this one](https://discordapp.com/developers/applications/me)), then go to this URL: `https://discordapp.com/oauth2/authorize?&client_id=YOUR_CLIENT_ID_HERE&scope=bot&permissions=0` (don't forget to replace `YOUR_CLIENT_ID_HERE` with your bot's Client ID). Select your server, then click `Authorize`.
 
+* Last step, open the `index.html` or add it in your OBS (or whatever streamming app you use).
+
 ## Credits
  
 * [elrumordelaluz/csshake](https://github.com/elrumordelaluz/csshake) for the CSS shake animations
