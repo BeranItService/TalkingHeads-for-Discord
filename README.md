@@ -14,7 +14,7 @@ Something you can use in your streams to allow the audience see who's talking on
 
 * Last step, open the `index.html` or add it in your OBS (or whatever streamming app you use).
 
-# Contributing
+## Contributing
 
 * Fork it!
 * Create your feature branch: git checkout -b my-new-feature
