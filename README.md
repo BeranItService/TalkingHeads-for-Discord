@@ -2,7 +2,7 @@
 
 Something you can use in your streams to allow the audience see who's talking on your Discord.
 
-[Talking Heads](https://raw.githubusercontent.com/ibito/TalkingHeads-for-Discord/master/img/talkingheads.gif)
+![Talking Heads](https://raw.githubusercontent.com/ibito/TalkingHeads-for-Discord/master/img/talkingheads.gif)
 
 * Create a new Discord bot [here](https://discordapp.com/developers/applications/me)
 * Get your bot token
