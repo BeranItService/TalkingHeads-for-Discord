@@ -6,11 +6,12 @@
 
 (You can get your channel ID from Discord, go to Settings -> Appearance and enable "Developer Mode", then right click your channel -> Copy ID).
 
+* To invite your new bot to your server, get your bot's CLIENT ID from the bot's discord page ([this one](https://discordapp.com/developers/applications/me)), then go to this URL: `https://discordapp.com/oauth2/authorize?&client_id=YOUR_CLIENT_ID_HERE&scope=bot&permissions=0` (don't forget to replace `YOUR_CLIENT_ID_HERE` with your bot's Client ID). Select your server, then click `Authorize`.
 
 ## Credits
  
-[elrumordelaluz/csshake](https://github.com/elrumordelaluz/csshake) for the CSS shake animations
-[izy521/discord.io](https://github.com/izy521/discord.io) for the Discord API for javascript
+* [elrumordelaluz/csshake](https://github.com/elrumordelaluz/csshake) for the CSS shake animations
+* [izy521/discord.io](https://github.com/izy521/discord.io) for the Discord API for javascript
  
 ## License
  
