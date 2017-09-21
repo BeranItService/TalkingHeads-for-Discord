@@ -1,0 +1,22 @@
+.users .name {
+    margin: 10px;
+    color: white;
+    font-size: 50px;
+    text-shadow:
+    -2px -2px 0 #000,  
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;
+    float: left;
+}
+
+.terrance {
+    float: left;
+    width: 137px;
+    height: 145px;
+}
+
+.terrance .bot {
+    margin-top: -150px;
+    margin-left: 3px;
+}
