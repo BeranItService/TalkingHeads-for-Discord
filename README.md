@@ -14,6 +14,12 @@ Something you can use in your streams to allow the audience see who's talking on
 
 * Last step, open the `index.html` or add it in your OBS (or whatever streamming app you use).
 
+## Features
+- [x] Create a character for each person talking in a voice channel
+- [x] Animate character when a person talks
+- [ ] Customizable characters
+- [ ] New ideas?
+
 ## Contributing
 
 * Fork it!
