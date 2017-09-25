@@ -2,6 +2,7 @@
 var voiceChannelID = cfgVoiceChannelID;
 var users = [];
 var fullUsersInfo = [];
+var customizedUsers = [];
 var talkingIds = [];
 var $head = null;
 
@@ -15,7 +16,7 @@ var addUsersToHTML = function (fullUsers) {
     var $talkingHead = $head.clone().show();
 
     $('.users').empty();
-
+    
     for (var i = 0; i < fullUsers.length; i++) {
         $talkingHead = $head.clone().show();
         $('.users').append($talkingHead);
@@ -29,11 +30,26 @@ var addUsersToHTML = function (fullUsers) {
     }
 }
 
+var getCustomUser = function (user) {
+    var jsonPath = 'users/' + user + '/' + user + '.json';
+    $.ajax({
+        type : 'GET',
+        dataType : 'json',
+        url: jsonPath,
+        success : function(data) {
+            
+            $.each(data.results, function(index, obj){
+                console.log(obj);
+            });
+           
+        } 
+    });
+}
+
 $(document).ready(function () {
     $head = $('.terrance');
     $head.hide();
     client.on('ready', function() {
-        console.log("%s (%s)... in the browser!", client.username, client.id);
 
         client.joinVoiceChannel(voiceChannelID, function(error, events) {
             //Check to see if any errors happen while joining.
@@ -66,6 +82,8 @@ $(document).ready(function () {
                     // remove any user it's not on the voice channel
                     if (!client.channels[voiceChannelID].members[users[i]]) {
                         users.splice(i);
+                    } else {
+                        getCustomUser('ibito');
                     }
 
                     if(client.users[users[i]]) {
@@ -77,14 +95,4 @@ $(document).ready(function () {
             });
         });
     });
-
-    client.on('message', function(user, userID, channelID, message, event) {
-        if (message === 'ping') {
-            client.sendMessage({
-                to: userID,
-                message: "pong"
-            });
-        }
-    });
-
 });
