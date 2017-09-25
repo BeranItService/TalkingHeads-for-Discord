@@ -1,5 +1,5 @@
 
-var voiceChannelID = cfgVoiceChannelID;
+var voiceChannelID = config.voiceChannelID;
 var users = [];
 var fullUsersInfo = [];
 var customizedUsers = [];
@@ -7,7 +7,7 @@ var talkingIds = [];
 var $head = null;
 
 var client = new Discord.Client({
-    token: cfgToken,
+    token: config.token,
     autorun: true
 });
 
@@ -27,6 +27,8 @@ var addUsersToHTML = function (fullUsers) {
         } else {
             $talkingHead.find('.top').removeClass(shakeClasses);
         }
+
+        console.log(talkingIds);
     }
 }
 
