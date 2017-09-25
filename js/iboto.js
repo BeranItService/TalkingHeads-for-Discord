@@ -1,12 +1,12 @@
 
-var voiceChannelID = '[INSERT YOUR VOICE CHANNEL ID]';
+var voiceChannelID = cfgVoiceChannelID;
 var users = [];
 var fullUsersInfo = [];
 var talkingIds = [];
 var $head = null;
 
 var client = new Discord.Client({
-    token: '[INSERT YOUR BOT TOKEN]',
+    token: cfgToken,
     autorun: true
 });
 
@@ -53,8 +53,6 @@ $(document).ready(function () {
                 for (var i = 0; i < talkingIds.length; i++) {
                     if (!speakingBool && talkingIds.indexOf(userID) > -1) {
                         talkingIds.splice(talkingIds.indexOf(userID));                    
-
-                       
 
                         // add any user to the array if it's not in there
                         if (users.indexOf(userID) === -1) {
