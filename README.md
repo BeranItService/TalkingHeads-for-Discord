@@ -1,4 +1,4 @@
-# TalkingHeads-for-Discord
+# TalkingHeads for Discord
 
 Something you can use in your streams to allow the audience see who's talking on your Discord.
 
