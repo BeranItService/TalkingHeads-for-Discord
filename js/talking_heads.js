@@ -50,7 +50,6 @@ $(document).ready(function () {
                         users[id].speaking = isSpeaking;
                     }
                     users[id].username = client.users[id].username;
-                    console.log(users);
                 }
                 updateTalkingFaces();
             });
