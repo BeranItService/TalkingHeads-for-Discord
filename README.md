@@ -17,7 +17,7 @@ Something you can use in your streams to allow the audience see who's talking on
 ## Features
 - [x] Create a character for each person talking in a voice channel
 - [x] Animate character when a person talks
-- [ ] Customizable characters
+- [ ] Customizable characters (different animation types)
 - [ ] New ideas?
 
 ## Contributing
@@ -31,7 +31,7 @@ Something you can use in your streams to allow the audience see who's talking on
 ## Credits
  
 * [elrumordelaluz/csshake](https://github.com/elrumordelaluz/csshake) for the CSS shake animations
-* [izy521/discord.io](https://github.com/izy521/discord.io) for the Discord API for javascript
+* [izy521/discord.io](https://github.com/izy521/discord.io) for the Discord API for Javascript
  
 ## License
  
