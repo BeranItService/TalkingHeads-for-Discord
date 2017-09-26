@@ -1,7 +1,6 @@
 
 var $head = null;
 var users = [];
-var timeToSleep = 60; // seconds to sleep
 var time = 0;
 
 var timeInterval = setInterval( function () {
@@ -32,7 +31,7 @@ var updateTalkingFaces = function () {
                 $talkingHead.find('.top').addClass(shakeClasses);
             } else {
                 $talkingHead.find('.top').removeClass(shakeClasses);
-                if (!users[id].time_since_last_speak || time - users[id].time_since_last_speak >= timeToSleep) {
+                if (!users[id].time_since_last_speak || time - users[id].time_since_last_speak >= config.sleepAfterSeconds) {
                     $talkingHead.find('.top img').attr('src', 'img/t_top_sleeping.png');
                 } 
             }

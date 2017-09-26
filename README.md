@@ -17,7 +17,7 @@ Something you can use in your streams to allow the audience see who's talking on
 ## Features
 - [x] Create a character for each person talking in a voice channel
 - [x] Animate character when a person talks
-- [x] Character sleeps after a minute without talking
+- [x] Character sleeps after a minute without talking (can be changed in `js/config.js`)
 - [ ] Customizable characters (different animation types)
 - [ ] New ideas?
 
