@@ -1,5 +1,5 @@
 var config = {
-    voiceChannelID: '328710959185133570',
-    token: 'MzEwODkwNTkxNzgzMzU0Mzkw.DKpP-g.gPoaoZG0ijfDo-iDzAx9N-PVptk',
+    voiceChannelID: '[INSERT YOUR VOICE CHANNEL ID HERE]',
+    token: '[INSERT YOUR BOTS TOKEN HERE]',
     sleepAfterSeconds: 60
 }
