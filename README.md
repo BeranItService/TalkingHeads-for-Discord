@@ -12,7 +12,7 @@ Something you can use in your streams to allow the audience see who's talking on
 * Get your bot token
 * Clone this repo (`git clone https://github.com/ibito/TalkingHeads-for-Discord.git`)
 * Go to the repo's path, and do an `npm install`
-* Modify `app\talkingheads_config.js` and paste the bot's token and the channel ID you want the bot to be "listening"
+* Modify `app/talkingheads_config.js` and paste the bot's token and the channel ID you want the bot to be "listening"
 
 (You can get your channel ID from Discord, go to Settings -> Appearance and enable "Developer Mode", then right click your channel -> Copy ID).
 
