@@ -1,5 +1,7 @@
 body {
     font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    overflow: hidden;
 }
 
 .users {
@@ -14,7 +16,7 @@ body {
     text-align: center;
 }
 
-.terrance {
+.head {
     width: 137px;
     height: 219px;
     margin: 0 50px;
@@ -22,7 +24,58 @@ body {
     margin: auto 1.5em;
 }
 
-.terrance .bot {
+.head .bot {
     margin-top: -150px;
     margin-left: 3px;
+}
+
+img.gif {
+    margin: 20px auto;
+    width: 100px;
+    image-rendering: pixelated;
+    display: block;
+}
+
+.titlebar {
+    background: #000;
+    width: 100%;
+    border: 1px solid red;
+    height: 25px;
+}
+
+/* Desktop */
+
+.desktop-container {
+    border: 1px solid gray;
+    width: 600px;
+    margin: 50px auto;
+    padding: 50px;
+}
+
+.header {
+    margin: 0 auto;
+    height: 220px;
+}
+
+.head {
+    width: 150px;
+    display: inline-block;
+}
+
+.logo {
+    width: 270px;
+    display: inline-block;
+}
+
+.instructions {
+    line-height: 25px
+}
+
+.talking-heads-discord-link {
+    border: 1px solid gray;
+    padding: 2px;
+    border-radius: 4px;
+    background: #cacaca;
+    color: black;
+    text-decoration: none;
 }
