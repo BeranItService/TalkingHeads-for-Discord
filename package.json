@@ -1,0 +1,18 @@
+{
+    "app_name": "new-talking-heads-for-discord",
+    "author": "ibito",
+    "dependencies": {
+        "discord.io": "github:woor/discord.io#gateway_v6",
+        "express": "^4.16.2",
+        "express-handlebars": "^3.0.0",
+        "express-jquery": "^1.8.3",
+        "socket.io": "^2.0.4"
+    },
+    "license": "MIT",
+    "main": "index.html",
+    "name": "talking-heads-for-discord",
+    "scripts": {
+        "start": "node app/talkingheads.js"
+    },
+    "version": "0.0.1"
+}
