@@ -18,12 +18,15 @@
      */
 
     box.BJ.custom = {
-        "Pozolito": {
-            "nick": "PozolitoMx",
-            "image_top": "img/t_top.png",
-            "image_bottom": "custom/p_bot.png",
-            "shake_style": "shake-slow"
-        }
+        /* customization example */
+        // you can add more like this
+        // "ibito": {
+        //     "animation_type": "gif",
+        //     "nick": "ibito",
+        //     "idle": "custom/gifs/ibito/idle.gif",
+        //     "talking": "custom/gifs/ibito/talking.gif",
+        //     "sleeping": "custom/gifs/ibito/sleeping.gif"
+        // },  
     };
 
 }(window || this));

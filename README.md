@@ -4,21 +4,31 @@ Something you can use in your streams to allow the audience see who's talking on
 
 ![Talking Heads](https://raw.githubusercontent.com/ibito/TalkingHeads-for-Discord/master/img/talkingheads.gif)
 
+## Requirements
+* Node.js
+
 * Create a new Discord bot [here](https://discordapp.com/developers/applications/me)
 * Make it a bot by clicking on `Create a Bot User`
 * Get your bot token
-* Modify `js/config.js` and paste the bot's token and your channel ID
+* Clone this repo (`git clone https://github.com/ibito/TalkingHeads-for-Discord.git`)
+* Go to the repo's path, and do an `npm install`
+* Modify `app\talkingheads_config.js` and paste the bot's token and the channel ID you want the bot to be "listening"
 
 (You can get your channel ID from Discord, go to Settings -> Appearance and enable "Developer Mode", then right click your channel -> Copy ID).
 
 * To invite your new bot to your server, get your bot's CLIENT ID from the bot's discord page ([this one](https://discordapp.com/developers/applications/me)), then go to this URL: `https://discordapp.com/oauth2/authorize?&client_id=YOUR_CLIENT_ID_HERE&scope=bot&permissions=0` (don't forget to replace `YOUR_CLIENT_ID_HERE` with your bot's Client ID). Select your server, then click `Authorize`.
 
-* Last step, open the `index.html` or add it in your OBS (or whatever streamming app you use).
+* Again in the repo's path, do a `npm start`
+* Last step, go to `http://localhost:3000` or add it in your OBS (or whatever streamming app you use).
+
+
+* OPTIONAL: you can change the animation to `gif` in `custom/config.js`
 
 ## Features
 - [x] Create a character for each person talking in a voice channel
 - [x] Animate character when a person talks
 - [x] Character sleeps after a minute without talking (can be changed in `js/config.js`)
+- [x] Gif support, you can add different gifs for `talking`, `idle` and `sleeping`
 - [ ] Customizable characters (different animation types)
 - [ ] New ideas?
 

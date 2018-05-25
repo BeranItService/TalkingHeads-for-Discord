@@ -58,7 +58,6 @@ discordClient.on('ready', function() {
             discordUsers = getConnectedDiscordUsers();
 
             for(var id in discordUsers) {
-                console.log(discordClient.users[id].bot);
                 if (discordUsers[id].user_id === userID) {
                     // adding a custom property
                     discordUsers[id].speaking = isSpeaking;

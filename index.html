@@ -1,27 +1,30 @@
-<!doctype HTML>
+<!doctype html>
 <html>
     <head>
-        <title>Talking Heads</title>
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>        
-        <script src="js/discord.io.js"></script> <!-- The discord.io client file -->
-        <script src="js/config.js"></script>
-        <script src="custom/config.js"></script>
-        <script src="js/talking_heads.js"></script>
-
-        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
+        <title>Talking Heads for Discord</title>
+        <script src="app/talkingheads.js"></script>
         <link rel="stylesheet" type="text/css" href="css/csshake.modified.css">
         <link rel="stylesheet" type="text/css" href="css/talking_heads.css">
-
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/desktop-linker.js"></script>
     </head>
 
     <body>
-        <div class="users">
-            <div class="terrance">
-                <div class="top"><img src="img/t_top.png" alt=""></div>
-                <div class="bot"><img src="img/t_bot.png" alt=""></div>
-                <div class="name"></div>
+        <div class="desktop-container">
+            <div class="header">
+                <div class="head">
+                    <div class="top shake-constant shake-chunk"><img src="img/t_top.png" alt=""></div>
+                    <div class="bot"><img src="img/t_bot.png" alt=""></div>
+                </div>
+                <div class="logo">
+                    <img src="img/talkingheadslogo.png" height="156" width="261"/>
+                </div>
+            </div>
+            <div class="instructions">
+                Just go to <a href="http://localhost:3000" class="talking-heads-discord-link">http://localhost:3000</a>
+                or <a href="http://127.0.0.1:3000" class="talking-heads-discord-link">http://127.0.0.1:3000</a>.
+                alternatively, you can add the <b>URL</b> to your OBS/XSplit as a <b>browser source</b>.
             </div>
         </div>
-
     </body>
-</html>
+</html> 
