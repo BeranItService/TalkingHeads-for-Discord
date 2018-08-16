@@ -1,5 +1,7 @@
 # TalkingHeads for Discord
 
+[![Join the chat at https://gitter.im/TalkingHeads-for-Discord/Lobby](https://badges.gitter.im/TalkingHeads-for-Discord/Lobby.svg)](https://gitter.im/TalkingHeads-for-Discord/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Something you can use in your streams to allow the audience see who's talking on your Discord.
 
 ![Talking Heads](https://raw.githubusercontent.com/ibito/TalkingHeads-for-Discord/master/img/talkingheads.gif)
