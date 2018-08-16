@@ -1,5 +1,5 @@
 window.onload = function () {
-    var socket = io.connect('http://ibito.net:3000');
+    var socket = io.connect('http://localhost:3000');
     var $head = $('.head');
     var $talkingHead = null;
     var users = [];
