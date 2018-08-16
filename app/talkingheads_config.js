@@ -1,5 +1,8 @@
 module.exports = {
-    token: '*** INSERT YOUR BOT TOKEN ***',
-    voiceChannelID: '*** INSERT THE CHANNEL ID YOU WANT THE BOT TO BE IN ***',
-    sleepAfterSeconds: 5
+    token: '',
+    voiceChannelID: '',
+    sleepAfterSeconds: 5,
+    ignoredUsers: [
+        '229051105005273103'
+    ]
 };
