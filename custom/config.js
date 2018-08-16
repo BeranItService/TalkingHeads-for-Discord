@@ -20,13 +20,13 @@
     box.BJ.custom = {
         /* customization example */
         // you can add more like this
-        // "ibito": {
-        //     "animation_type": "gif",
-        //     "nick": "ibito",
-        //     "idle": "custom/gifs/ibito/idle.gif",
-        //     "talking": "custom/gifs/ibito/talking.gif",
-        //     "sleeping": "custom/gifs/ibito/sleeping.gif"
-        // },  
+        "ibito": {
+            "animation_type": "gif",
+            "nick": "ibito",
+            "idle": "custom/gifs/steve/idle_blink.gif",
+            "talking": "custom/gifs/steve/talking.gif",
+            "sleeping": "custom/gifs/steve/sleep.gif"
+        },
     };
 
 }(window || this));
