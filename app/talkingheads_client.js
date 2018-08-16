@@ -1,5 +1,5 @@
 window.onload = function () {
-    var socket = io.connect('http://localhost:3000');
+    var socket = io.connect('http://ibito.net:3000');
     var $head = $('.head');
     var $talkingHead = null;
     var users = [];
@@ -27,48 +27,32 @@ window.onload = function () {
         $(document).find('.users').empty();
 
         for (var id in users) {
-            if (!users[id].isBot) {
+            if (!users[id].isBot && !users[id].ignored) {
                 $talkingHead = $head.clone().show().css('display', 'inline-block');
 
-                var customCharacter = window.BJ.custom[users[id].username] || {};
-                var topImg = customCharacter.image_top || 'img/t_top.png';
-                var topImgSleeping = customCharacter.image_sleeping || 'img/t_top_sleeping.png';
-                var bottomImg = customCharacter.image_bottom || 'img/t_bot.png';
-                var shakeStyle = 'shake-constant ' + (customCharacter.shake_style || 'shake-chunk');
+                var customCharacter = window.BJ.custom[users[id].username] || {
+                    "animation_type": "gif",
+                    "idle": "custom/gifs/steve/idle_blink.gif",
+                    "talking": "custom/gifs/steve/talking.gif",
+                    "sleeping": "custom/gifs/steve/sleep.gif"
+                };
                 var nickname = customCharacter.nick || users[id].username;
-                var animationType = customCharacter.animation_type || "shake";
 
                 $(document).find('.users').append($talkingHead);
-                if (animationType === "shake") {
-                    $talkingHead.find('.top img').attr('src', topImg);
-                    $talkingHead.find('.bot img').attr('src', bottomImg);
-                    $talkingHead.find('.name').append(nickname);
 
-                    if (users[id].speaking) {
-                        $talkingHead.find('.top img').attr('src', topImg);
-                        $talkingHead.find('.top').addClass(shakeStyle);
-                    } else {
-                        $talkingHead.find('.top').removeClass(shakeStyle);
-                        if (!users[id].timeSinceLastSpoke || time - users[id].timeSinceLastSpoke >= sleepTime) {
-                            $talkingHead.find('.top img').attr('src', topImgSleeping);
-                        }
+                $talkingHead.find('.top img').addClass('gif');
+                $talkingHead.find('.bot').remove();
+                $talkingHead.find('.name').append(nickname);
+
+                if (users[id].speaking) {
+                    $talkingHead.find('.top img').attr('src', customCharacter.talking);
+                } else {
+                    $talkingHead.find('.top img').attr('src', customCharacter.idle);
+                    if (!users[id].timeSinceLastSpoke || time - users[id].timeSinceLastSpoke >= sleepTime) {
+                        $talkingHead.find('.top img').attr('src', customCharacter.sleeping);
                     }
                 }
-
-                if (animationType === "gif") {
-                    $talkingHead.find('.top img').addClass('gif');
-                    $talkingHead.find('.bot').remove();
-                    $talkingHead.find('.name').append(nickname);
-
-                    if (users[id].speaking) {
-                        $talkingHead.find('.top img').attr('src', customCharacter.talking);
-                    } else {
-                        $talkingHead.find('.top img').attr('src', customCharacter.idle);
-                        if (!users[id].timeSinceLastSpoke || time - users[id].timeSinceLastSpoke >= sleepTime) {
-                            $talkingHead.find('.top img').attr('src', customCharacter.sleeping);
-                        }
-                    }
-                }
+           
             }
         }
     };

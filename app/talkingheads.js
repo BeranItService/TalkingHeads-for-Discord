@@ -46,8 +46,8 @@ io.on('connection', function(socket){
 });
 
 app.get('/', function (req, res) {
-    console.log('got \'/heads\'');
-    res.render('heads');
+    console.log('Showing main');
+    res.render('layouts/heads');
 });
 
 discordClient.on('ready', function() {
@@ -66,6 +66,10 @@ discordClient.on('ready', function() {
                         discordUsers[id].timeSinceLastSpoke = time;
                     }
                 }
+
+                if (discordConfig.ignoredUsers.indexOf(id) !== -1) {
+                    discordUsers[id].ignored = true;
+                } 
                 discordUsers[id].username = discordClient.users[id].username;
                 discordUsers[id].isBot = discordClient.users[id].bot;
             }
